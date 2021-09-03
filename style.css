@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: #222222;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header-wrap {  
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-logo {
+    margin-right: 41px;
+}
+.link-user {
+    margin-right: 33px;
+}
+
+.intro {
+    background-color: #F7E4E2;
+}
+.intro-wrap {
+    height: 764px;
+    background-image: url(../shop/img/intro-bgi.png);
+    background-repeat: no-repeat;
+    background-position: -228px bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 65px;
+}
+.intro-title {
+    width: 401px;
+    padding-left: 16px;
+    margin-right: 101px;
+    border-left: 12px solid #F16D7F;
+    color: #222222;
+}
+.intro-title-big {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+.intro-title-small {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+.intro-title-pink {
+    color: #F16D7F;
+}
+
+.categories-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+.categories-item {
+    width: 360px;
+    height: 260px;
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.categories-item-women {
+    background-image: url(../shop/img/for-women.png);
+
+}
+.categories-item-men {
+    background-image: url(../shop/img/for-men.png);
+}
+.categories-item-kids {
+    background-image: url(../shop/img/for-kids.png);
+}
+.categories-item-acc {
+    width: 100%;
+    height: 180px;
+    background-image: url(../shop/img/acc.png);
+}
+.categories-title-white {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.categories-title-pink {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
