@@ -33,7 +33,7 @@
 }
 .intro-wrap {
     height: 764px;
-    background-image: url(../shop/img/intro-bgi.png);
+    background-image: url(./img/intro-bgi.png);
     background-repeat: no-repeat;
     background-position: -228px bottom;
     display: flex;
@@ -81,19 +81,19 @@
     text-align: center;
 }
 .categories-item-women {
-    background-image: url(../shop/img/for-women.png);
+    background-image: url(./img/for-women.png);
 
 }
 .categories-item-men {
-    background-image: url(../shop/img/for-men.png);
+    background-image: url(./img/for-men.png);
 }
 .categories-item-kids {
-    background-image: url(../shop/img/for-kids.png);
+    background-image: url(./img/for-kids.png);
 }
 .categories-item-acc {
     width: 100%;
     height: 180px;
-    background-image: url(../shop/img/acc.png);
+    background-image: url(./img/acc.png);
 }
 .categories-title-white {
     font-weight: normal;
