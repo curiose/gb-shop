@@ -231,3 +231,111 @@
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+.reviews {
+    background-image: url(./img/bgi-reviews.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+}
+
+.reviews-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-user {
+    width: 359px;
+    margin-top: 97px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.reviews-user__logo {
+    margin-bottom: 30px;
+}
+.reviews-user__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+.reviews-subscribe {
+    /* width: 557px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 105px; */
+    margin-right: 97px;
+}
+.reviews-subscribe__title {
+    margin-top: 150px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #222224;
+    line-height: 167.2%;
+}
+.reviews-sibscribe__title-big {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+.subscribe__title-small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+.subscribe {
+    display: flex;
+    justify-content: center;
+}
+.subscribe-field {
+    padding: 10px 64px 10px 22px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #E1E1E1;
+}
+.subscribe-btn {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #F16D7F;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer {
+    background-color: #222224;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FBFBFB;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.social-icons {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.social-icons-link {
+    width: 31px;
+    margin-right: 7px;
+    text-decoration: none;
+}
