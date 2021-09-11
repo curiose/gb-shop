@@ -152,7 +152,42 @@
     background-color: #F8F8F8;
     padding-bottom: 20px;
     padding-right: 29px;
+    position: relative;
+    transition: 0,5s;
+    overflow: hidden;
 }
+
+.products-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0,5s;
+}
+.products-card-overlay:hover {
+    opacity: 1;
+}
+.overlay-button {
+    width: 139px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-button-icon {
+    fill: #FFFFFF;
+    margin-right: 11px;
+}
+
 .products-pic {
     margin-bottom: 25px;
 }
