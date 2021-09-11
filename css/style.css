@@ -192,12 +192,16 @@
     text-align: center;
     text-decoration: none;
     padding: 15px 39px;
-    border: 1px solid #FF6A6A;
+    border: 1px solid #F26376;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+}
+.products-btn:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
 }
 
 .advantages {
@@ -336,13 +340,21 @@
     font-size: 16px;
     line-height: 19px;
 }
-.social-icons {
+.social {
     display: flex;
-    list-style-type: none;
-    align-items: center;
 }
-.social-icons-link {
-    width: 31px;
+.social-link {
     margin-right: 7px;
     text-decoration: none;
+    color: #222222;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-link:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
 }
