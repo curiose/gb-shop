@@ -1,3 +1,21 @@
+/* vars */
+
+$pink = #F16D7F;
+$dark = #222222;
+$white = #FFFFFF;
+
+/* mixins */
+
+@mixin dfjcsb {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin dfjcc {
+    display: flex;
+    justify-content: center;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +24,7 @@
 }
 
 .header {
-    background-color: #222222;
+    background-color: $dark;
 }
 
 .container {
@@ -17,8 +35,7 @@
 .header-wrap {  
     padding-top: 19px;
     padding-bottom: 19px;
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
     align-items: center;
 }
 
@@ -40,8 +57,8 @@
     background-repeat: no-repeat;
     background-position: -228px bottom;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     margin-bottom: 65px;
 }
 
@@ -49,8 +66,8 @@
     width: 401px;
     padding-left: 16px;
     margin-right: 101px;
-    border-left: 12px solid #F16D7F;
-    color: #222222;
+    border-left: 12px solid $pink;
+    color: $dark;
 }
 
 .intro-title-big {
@@ -67,12 +84,11 @@
 }
 
 .intro-title-pink {
-    color: #F16D7F;
+    color: $pink;
 }
 
 .categories-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 96px;
@@ -83,8 +99,7 @@
     height: 260px;
     background-color: #C4C4C4;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    @include dfjcc();
     align-items: center;
     text-align: center;
     position: relative;
@@ -110,30 +125,30 @@
 .categories-title {
     position: absolute;
     z-index: 4;
-}
 
-.categories-title-white {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-}
+    &-white {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+    }
 
-.categories-title-pink {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
+    &-pink {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+    }
 }
 
 .video {
     position: absolute;
     object-fit: cover;
-} 
 
-.video:hover {
-    z-index: 10;
-}
+    &:hover {
+        z-index: 10;
+    }
+} 
 
 .products-wrap {
 }
@@ -143,7 +158,7 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 36px;
-    color: #222222;
+    color: $dark;
     text-align: center;
 }
 .products-text {
@@ -157,8 +172,7 @@
 }
 
 .products-list {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -181,31 +195,29 @@
     right: 0;
     height: 420px;
     background-color: rgba(58, 56, 56, 0.86);
-    display: flex;
-    justify-content: center;
+    @include dfjcc();
     align-items: center;
     opacity: 0;
     transition: 0.5s;
-}
 
-.products-card-overlay:hover {
-    opacity: 1;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .overlay-button {
     width: 139px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: $white;
+    border: 1px solid $white;
     background: transparent;
     padding: 11px;
-    display: flex;
+    @include dfjcc();
     align-items: center;
-    justify-content: center;
-}
 
-.overlay-button-icon {
-    fill: #FFFFFF;
-    margin-right: 11px;
+    &-icon {
+        fill: $white;
+        margin-right: 11px;
+    }
 }
 
 .products-pic {
@@ -237,13 +249,12 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F;
+    color: $pink;
     margin-left: 18px;
 }
 
 .products-link {
-    display: flex;
-    justify-content: center;
+    @include dfjcc();
     margin-top: 48px;
     margin-bottom: 109px;
 }
@@ -258,11 +269,10 @@
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-}
-
-.products-btn:hover {
-    background-color: #F26376;
-    color: #FFFFFF;
+    &:hover {
+        background-color: #F26376;
+        color: $white;
+    }
 }
 
 .advantages {
@@ -270,8 +280,7 @@
 }
 
 .advantages-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
     padding-top: 104px;
     padding-bottom: 104px;
 }
@@ -324,17 +333,15 @@
 }
 
 .reviews-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
 }
 
 .reviews-user {
     width: 359px;
     margin-top: 97px;
-    display: flex;
+    @include dfjcc();
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .reviews-user__logo {
@@ -375,8 +382,7 @@
 }
 
 .subscribe {
-    display: flex;
-    justify-content: center;
+    @include dfjcc();
 }
 
 .subscribe-field {
@@ -392,9 +398,9 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: $white;
     border: none;
-    background-color: #F16D7F;
+    background-color: $pink;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -404,8 +410,7 @@
 }
 
 .footer-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
     align-items: center;
     color: #FBFBFB;
     padding-top: 24px;
@@ -426,18 +431,17 @@
 .social-link {
     margin-right: 7px;
     text-decoration: none;
-    color: #222222;
+    color: $dark;
     background-color: #fff;
     width: 32px;
     height: 32px;
-    display: flex;
+    @include dfjcc();
     align-items: center;
-    justify-content: center;
-}
 
-.social-link:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
+    &:hover {
+        background-color: $pink;
+        color: $white;
+    }
 }
 
 .arrivals {
@@ -448,15 +452,14 @@
 }
 
 .arrivals-wrap {
-    display: flex;
-    justify-content: space-between;
+    @include dfjcsb();
 }
 
 .arrivals-title {
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-    color: #F16D7F;
+    color: $pink;
 }
 
 .breadcrumbs {
@@ -476,7 +479,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $pink;
 }
 
 .breadcrumbs li::before {
@@ -523,8 +526,7 @@
 }
 
 .products-pages-navigation {
-    display: flex;
-    justify-content: center;
+    @include dfjcc();
     margin-top: 48px;
     margin-bottom: 96px;
 }
@@ -544,10 +546,10 @@
     font-size: 16px;
     line-height: 19px;
     color: #EBEBEB;
-}
 
-.pages:hover {
-    color: #EF5B70;
+    &:hover {
+        color: #EF5B70;
+    }
 }
 
 .ellipsis {
