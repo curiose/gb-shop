@@ -587,7 +587,7 @@
   background-color: #fff;
   position: absolute;
   z-index: -1;
-  height: 531px;
+  max-height: 531px;
   width: 360px;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   top: -21px;
@@ -597,6 +597,7 @@
   padding-left: 16px;
   background-color: #fff;
   margin-top: 46px;
+  padding-bottom: 16px;
 }
 
 .filter-category-drop {
@@ -611,7 +612,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 24px;
+}
+.filter-category-wrap {
+  padding-top: 24px;
 }
 .filter-category-list {
   list-style-type: none;
