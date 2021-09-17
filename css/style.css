@@ -35,10 +35,8 @@
   position: relative;
 }
 
-.header-menu [open] {
-  width: 232px;
-  height: 764px;
-  box-shadow: rgba(0, 0, 0, 0.21);
+.header-menu[open] > .menu-drop {
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .summary {
@@ -566,14 +564,17 @@
   display: flex;
 }
 
+.filter-drop[open] {
+  color: #F16D7F;
+}
+
 .filter {
+  display: block;
   margin-right: 324px;
 }
 
-.filter-btn {
-  background: none;
-  border: none;
-  margin-right: 11px;
+.filter-icon {
+  margin-left: 11px;
 }
 
 .sorting {
