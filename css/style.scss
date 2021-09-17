@@ -3,7 +3,6 @@
 $pink: #F16D7F;
 $dark: #222222;
 $white: #FFFFFF;
-$shadow: rgba(0, 0, 0, 0.21);
 
 /* mixins */
 
@@ -51,10 +50,8 @@ $shadow: rgba(0, 0, 0, 0.21);
     position: relative;
 }
 
-.header-menu [open] {
-    width: 232px;
-    height: 764px;
-    box-shadow: $shadow;
+.header-menu[open]>.menu-drop {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .summary {
@@ -528,6 +525,8 @@ $shadow: rgba(0, 0, 0, 0.21);
     }
 }
 
+// CATALOG
+
 .arrivals {
     background-color: #F8F3F4;
     padding-top: 60px;
@@ -580,15 +579,24 @@ $shadow: rgba(0, 0, 0, 0.21);
     display: flex;
 }
 
+.filter-drop[open] {
+    color: $pink;
+}
+
 .filter {
+    display: block;
     margin-right: 324px;
 }
 
-.filter-btn {
-    background: none;
-    border: none;
-    margin-right: 11px;
+.filter-icon {
+    margin-left: 11px;
 }
+
+// .filter-btn {
+//     background: none;
+//     border: none;
+//     margin-right: 11px;
+// }
 
 .sorting {
     display: flex;
