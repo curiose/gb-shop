@@ -587,7 +587,7 @@ $white: #FFFFFF;
     &-title {
         display: block;
         padding-left: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 64px;
     }
 
     &-icon {
@@ -609,6 +609,7 @@ $white: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     top: -21px;
 }
+
 .filter-menu {
     padding-left: 16px;
     background-color: #fff;
@@ -656,15 +657,40 @@ $white: #FFFFFF;
     display: flex;
     align-items: center;
     margin-left: 30px;
+
+    &-wrap {
+        display: flex;
+        padding-bottom: 64px;
+    }
 }
 
-.list-type {
-    list-style-type: none;
+.size {
+    &-title {
+        display: block;
+        // padding-bottom: 64px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-right: 28px;
+        position: relative;
+    }
+
+    &-checkbox {
+    font-weight: normal;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 16px;
     color: #6F6E6E;
-    margin-right: 28px;
-    margin-bottom: 48px;
+    }
+}
+
+.size-form-wrap {
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 79px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    margin-top: 5px;
+    padding: 7px 30px 11px 9px;
 }
 
 .fa-chevron-down {

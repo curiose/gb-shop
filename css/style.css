@@ -572,7 +572,7 @@
 .filter-title {
   display: block;
   padding-left: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 64px;
 }
 .filter-icon {
   margin-left: 11px;
@@ -634,14 +634,34 @@
   align-items: center;
   margin-left: 30px;
 }
+.sorting-wrap {
+  display: flex;
+  padding-bottom: 64px;
+}
 
-.list-type {
-  list-style-type: none;
+.size-title {
+  display: block;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   margin-right: 28px;
-  margin-bottom: 48px;
+  position: relative;
+}
+.size-checkbox {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.size-form-wrap {
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  width: 79px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  margin-top: 5px;
+  padding: 7px 30px 11px 9px;
 }
 
 .fa-chevron-down {
