@@ -709,6 +709,7 @@
   background-color: #F7F7F7;
   align-items: center;
   position: relative;
+  padding-bottom: 64px;
 }
 
 .slider-btn {
@@ -733,4 +734,118 @@
 
 .slider-btn:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product-card-container {
+  border: 1px solid #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 128px;
+  margin-top: -64px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.product-card-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 65px;
+  text-align: center;
+}
+.product-card-title-pink {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+.product-card-title-pink::after {
+  content: "";
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  display: block;
+  margin: 12px auto;
+}
+.product-card-title-grey {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+.product-card-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.product-card-price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+.product-card-price::after {
+  content: "";
+  width: 642px;
+  height: 1px;
+  background-color: #EAEAEA;
+  display: block;
+  margin: 64px auto;
+}
+
+.choosing-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.choosing-drop {
+  margin-right: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.color-title {
+  display: block;
+  position: relative;
+}
+.color-form-wrap {
+  position: absolute;
+  background-color: #fff;
+}
+
+.product-card-button {
+  width: 139px;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background: transparent;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+  fill: #F16D7F;
+}
+.product-card-button-icon {
+  margin-right: 11px;
+}
+
+.product-card-button:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  fill: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
