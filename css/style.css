@@ -295,14 +295,14 @@
   margin-bottom: 25px;
 }
 
-.products-card-title {
+.products-card-link {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
   margin-left: 18px;
-  margin-bottom: 13px;
+  text-decoration: none;
 }
 
 .products-card-decription {
@@ -312,6 +312,7 @@
   line-height: 17px;
   color: #5D5D5D;
   margin-left: 18px;
+  margin-top: 13px;
   margin-bottom: 18px;
 }
 
