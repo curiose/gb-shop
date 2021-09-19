@@ -697,4 +697,40 @@
 .ellipsis {
   color: #EBEBEB;
   align-self: flex-end;
+}
+
+.arrivals-product {
+  margin-bottom: 0;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  background-color: #F7F7F7;
+  align-items: center;
+  position: relative;
+}
+
+.slider-btn {
+  background-color: #EAEAEA;
+  position: absolute;
+  fill: #222222;
+  border: none;
+  padding: 13px 18px;
+}
+.slider-btn-left {
+  left: 0;
+}
+.slider-btn-rigth {
+  right: 0;
+}
+.slider-btn :hover {
+  fill: #F16D7F;
+}
+.slider-btn :active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider-btn:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=style.css.map */
