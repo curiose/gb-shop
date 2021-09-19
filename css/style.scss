@@ -266,12 +266,11 @@ $shift: 64px;
     padding-bottom: 20px;
     padding-right: 29px;
     position: relative;
-    transition: 0.5s;
-    overflow: hidden;
 }
 
 .products-card-overlay {
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -281,26 +280,37 @@ $shift: 64px;
     align-items: center;
     opacity: 0;
     transition: 0.5s;
+    transform: scale(0);
+    transform-origin: left bottom;
+}
 
-    &:hover {
-        opacity: 1;
-    }
+.products-card:hover .products-card-overlay {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .overlay-button {
     width: 139px;
     color: $white;
     border: 1px solid $white;
-    background: transparent;
+    background-color: transparent;
     padding: 11px;
     @include dfjcc();
     align-items: center;
-
-    &-icon {
-        fill: $white;
+    fill: $white;
+    transition: 0.3s;
+    
+    &-icon { 
         margin-right: 11px;
     }
 }
+
+.overlay-button:hover {
+    background-color: $white;
+    color: $dark;
+    fill: $dark;
+}
+
 
 .products-pic {
     margin-bottom: 25px;
@@ -351,6 +361,7 @@ $shift: 64px;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    transition: 0.3s;
     &:hover {
         background-color: #F26376;
         color: $white;
@@ -485,6 +496,11 @@ $shift: 64px;
     background-color: $pink;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #E05C6E;
+    }
 }
 
 .footer {
@@ -511,6 +527,7 @@ $shift: 64px;
 }
 
 .social-link {
+    display: inline-block;
     margin-right: 7px;
     text-decoration: none;
     color: $dark;
@@ -519,10 +536,12 @@ $shift: 64px;
     height: 32px;
     @include dfjcc();
     align-items: center;
+    transition: 0.3s;
 
     &:hover {
         background-color: $pink;
         color: $white;
+        transform: rotate(360deg);
     }
 }
 
@@ -721,6 +740,7 @@ $shift: 64px;
 
     &:hover {
         color: #EF5B70;
+        transform: scale(1.5);
     }
 }
 
@@ -885,6 +905,7 @@ $shift: 64px;
         align-items: center;
         margin-bottom: 65px;
         fill: $pink;
+        transition: 0.3s;
     
         &-icon {
             margin-right: 11px;
