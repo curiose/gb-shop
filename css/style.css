@@ -9,6 +9,7 @@
 
 .header {
   background-color: #222222;
+  position: relative;
 }
 
 .container {
@@ -30,83 +31,88 @@
   align-items: center;
 }
 
-.header-menu {
-  margin-right: 25px;
-  position: relative;
+.logo-link {
+  margin-right: 41px;
 }
 
-.header-menu[open] > .menu-drop {
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+.search-btn {
+  background-color: transparent;
+  border: none;
 }
 
-.summary {
-  display: block;
+.header-burger {
+  background-color: transparent;
+  border: none;
+  margin-right: 33px;
 }
-.summary-img {
+.header-burger-img {
   fill: #FFFFFF;
 }
 
-.menu-drop {
+.link-user {
+  margin-right: 33px;
+}
+
+.nav-menu {
+  position: absolute;
+  right: 0;
   width: 232px;
   height: 764px;
-  position: absolute;
+  padding: 36px 33px;
   background-color: #FFFFFF;
-  z-index: 10;
-  padding-top: 15px;
-  padding-left: 37px;
-  padding-right: 14px;
-  padding-bottom: 158px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.drop-close {
-  display: flex;
-  justify-content: flex-end;
+.nav-menu-wrap {
+  position: relative;
 }
-.drop-close-btn {
-  align-items: flex-end;
-  margin-bottom: 9px;
+.nav-menu-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: transparent;
   border: none;
-  background: none;
 }
-
-.menu-title {
-  font-style: normal;
+.nav-menu-btn:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.nav-menu-title-main {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
   margin-bottom: 24px;
 }
-.menu-title-pink {
-  font-weight: normal;
+.nav-menu-title-pink {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
   margin-bottom: 12px;
 }
-
-.menu-catalog {
+.nav-menu-list {
+  list-style-type: none;
   margin-bottom: 20px;
 }
-
-.menu-list {
-  list-style-type: none;
+.nav-menu-item {
   margin-bottom: 11px;
+  padding-left: 21px;
 }
-.menu-list-link {
+.nav-menu-item-link {
   text-decoration: none;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
 }
-
-.link-logo {
-  margin-right: 41px;
+.nav-menu-item-link:hover {
+  color: #222222;
 }
 
-.link-user {
-  margin-right: 33px;
+.nav-menu-open {
+  display: block;
+}
+
+.nav-menu-close {
+  display: none;
 }
 
 .intro {
