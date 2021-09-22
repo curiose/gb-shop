@@ -1,0 +1,136 @@
+.products-wrap {
+}
+
+.products-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: $dark;
+    text-align: center;
+}
+.products-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.products-list {
+    @include dfjcsb();
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.products-card {
+    max-width: 360px;
+    list-style-type: none;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+    padding-right: 29px;
+    position: relative;
+}
+
+.products-card-overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    @include dfjcc();
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0);
+    transform-origin: left bottom;
+}
+
+.products-card:hover .products-card-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay-button {
+    width: 139px;
+    color: $white;
+    border: 1px solid $white;
+    background-color: transparent;
+    padding: 11px;
+    @include dfjcc();
+    align-items: center;
+    fill: $white;
+    transition: 0.3s;
+    
+    &-icon { 
+        margin-right: 11px;
+    }
+}
+
+.overlay-button:hover {
+    background-color: $white;
+    color: $dark;
+    fill: $dark;
+}
+
+
+.products-pic {
+    margin-bottom: 25px;
+}
+
+.products-card-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 18px;
+    text-decoration: none;
+}
+
+.products-card-decription {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-left: 18px;
+    margin-top: 13px;
+    margin-bottom: 18px;
+}
+
+.products-card-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink;
+    margin-left: 18px;
+}
+
+.products-link {
+    @include dfjcc();
+    margin-top: 48px;
+    margin-bottom: 109px;
+}
+
+.products-btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 39px;
+    border: 1px solid #F26376;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    transition: 0.3s;
+    &:hover {
+        background-color: #F26376;
+        color: $white;
+    }
+}

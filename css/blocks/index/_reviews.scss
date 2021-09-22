@@ -1,0 +1,84 @@
+.reviews {
+    background-image: url(../img/bgi-reviews.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+}
+
+.reviews-wrap {
+    @include dfjcsb();
+}
+
+.reviews-user {
+    width: 359px;
+    margin-top: 97px;
+    @include dfjcc();
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.reviews-user__logo {
+    margin-bottom: 30px;
+}
+
+.reviews-user__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.reviews-subscribe {
+    margin-right: 97px;
+}
+
+.reviews-subscribe__title {
+    margin-top: 150px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #222224;
+    line-height: 167.2%;
+}
+
+.reviews-sibscribe__title-big {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.subscribe__title-small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.subscribe {
+    @include dfjcc();
+}
+
+.subscribe-field {
+    padding: 10px 64px 10px 22px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #E1E1E1;
+}
+
+.subscribe-btn {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    border: none;
+    background-color: $pink;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #E05C6E;
+    }
+}

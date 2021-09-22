@@ -1,0 +1,35 @@
+.slider {
+    @include dfjcc();
+    background-color: #F7F7F7;
+    align-items: center;
+    position: relative;
+    padding-bottom: $shift;
+}
+
+.slider-btn {
+    background-color: #EAEAEA;
+    position: absolute;
+    fill: $dark;
+    border: none;
+    padding: 13px 18px;
+
+    &-left {
+        left: 0;
+    }
+
+    &-rigth {
+        right: 0;
+    }
+
+    :hover {
+        fill: $pink;
+    }
+
+    :active {
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.slider-btn:active {
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
