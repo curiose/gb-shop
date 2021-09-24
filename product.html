@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop main</title>
+    <title>Product page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +53,7 @@
                                  <li class="menu-list"><a class="menu-list-link" href="product.html">Accessories</a></li>
                                  <li class="menu-list"><a class="menu-list-link" href="product.html">Jackets & Coats</a></li>
                                  <li class="menu-list"><a class="menu-list-link" href="product.html">Polos</a></li>
-                                 <li class="menu-list"><a class="menu-list-link" href="#">T-Shirts</a></li>
+                                 <li class="menu-list"><a class="menu-list-link" href="product.html">T-Shirts</a></li>
                                  <li class="menu-list"><a class="menu-list-link" href="product.html">Shirts</a></li>
                                  <li class="menu-list"><a class="menu-list-link" href="product.html">Bags</a></li>
                                </ul>
@@ -65,87 +65,164 @@
             </div>
         </div>
     </header>
-    <section class="intro">
+    <section class="arrivals arrivals-product">
         <div class="container">
-            <div class="intro-wrap">
-                <h1 class="intro-title"><span class="intro-title-big">THE BRAND</span><br>
-                    <span class="intro-title-small">OF LUXERIOUS <span class="intro-title-pink">FASHION</span></span></h1>
+            <div class="arrivals-wrap">
+                <h3 class="arrivals-title">NEW ARRIVALS </h3>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb-link" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="breadcrumb-link" href="#">WOMEN</a>
+                    </li>
+                    <li>
+                        <span class="breadcrumb-span"> NEW ARRIVALS </span>
+                    </li>
+                </ul>
             </div>
+        </div>       
+    </section>
+
+    <section class="slider">
+        <img src="img/product/main-product.png" alt="slide" class="slider-img">
+        <button class="slider-btn slider-btn-left">
+            <svg width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"/>
+                </svg>
+        </button>
+        <button class="slider-btn slider-btn-rigth">
+            <svg width="13" height="23" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.300049 19.2499L8.05005 11.4999L0.300049 3.7499L1.85005 0.649902L12.7 11.4999L1.85005 22.3499L0.300049 19.2499Z"/>
+                </svg>
+                
+        </button>
+    </section>
+
+    <section class="product-card">
+        <div class="container product-card-container">
+           <div class="product-card-wrap">
+            <h4 class="product-card-title-pink">
+                WOMEN COLLECTION
+            </h4>
+            <h3 class="product-card-title-grey">
+                MOSCHINO CHEAP AND CHIC
+            </h3>
+            <p class="product-card-text">
+                Compellingly actualize fully researched processes before proactive outsourcing. <br> Progressively syndicate collaborative architectures before cutting-edge services. Completely <br> visualize parallel core competencies rather than exceptional portals. 
+            </p>
+            <span class="product-card-price">
+                $561
+            </span>
+           </div>
+           <div class="choosing">
+          <div class="choosing-wrap">
+              <div class="choosing-drop">
+                  <details class="color">
+                      <summary class="color-title">
+                        CHOOSE COLOR
+                          <i class="fas fa-chevron-down"></i>
+                      </summary>
+                      <div class="color-form-wrap">
+                          <form action="#" class="color-form">
+                              <label class="color-checkbox">
+                                  <input type="checkbox" name="color"> Black
+                              </label> <br>
+                              <label class="color-checkbox">
+                                  <input type="checkbox" name="color"> White
+                              </label> <br>
+                              <label class="color-checkbox">
+                                  <input type="checkbox" name="color"> Yellow
+                              </label> <br>
+                              <label class="color-checkbox">
+                                  <input type="checkbox" name="color"> Green
+                              </label> <br>
+                          </form>
+                      </div>
+                  </details>
+                </div>
+                <div class="choosing-drop">
+                    <details class="color">
+                        <summary class="color-title">
+                            CHOOSE SIZE 
+                            <i class="fas fa-chevron-down"></i>
+                        </summary>
+                        <div class="color-form-wrap">
+                            <form action="#" class="color-form">
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Black
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> White
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Yellow
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Green
+                                </label> <br>
+                            </form>
+                        </div>
+                    </details>
+                </div>
+                <div class="choosing-drop">
+                    <details class="color">
+                        <summary class="color-title">
+                            QUANTITY
+                            <i class="fas fa-chevron-down"></i>
+                        </summary>
+                        <div class="color-form-wrap">
+                            <form action="#" class="color-form">
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Black
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> White
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Yellow
+                                </label> <br>
+                                <label class="color-checkbox">
+                                    <input type="checkbox" name="color"> Green
+                                </label> <br>
+                            </form>
+                        </div>
+                    </details>
+                </div>
+          </div>
+          </div>
+          <button class="product-card-button">
+            <svg class="product-card-button-icon" width="26" height="24" viewBox="0 0 35 33" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.9509 23.2667H25.8386C25.2294 23.2667 24.7177 22.7671 24.6735 22.1294C24.629 21.4607 25.1175 20.8785 25.7626 20.8346C25.788 20.8329 25.8145 20.832 25.8405 20.832C26.4575 20.832 26.9743 21.3219 27.0201 21.9487C27.0319 22.1971 26.9914 22.5514 26.736 22.8439L26.73 22.8507L26.7242 22.8575C26.5275 23.0912 26.2607 23.2321 25.9509 23.2667ZM12.2189 23.2604C11.5683 23.2604 11.0391 22.7174 11.0391 22.05C11.0391 21.3832 11.5683 20.8406 12.2189 20.8406C12.8694 20.8406 13.3987 21.3832 13.3987 22.05C13.3987 22.7174 12.8694 23.2604 12.2189 23.2604Z" />
+                <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
+                <g filter="url(#filter0_d)">
+                <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
+                </g>
+                <defs>
+                <filter id="filter0_d" x="0.560547" y="0.292969" width="33.9874" height="31.9733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
+                
+            Add to Cart        
+        </button>
         </div>
     </section>
-    <section class="categories">
-        <div class="container">
-            <div class="categories-wrap">
-                <div class="categories-item categories-item-women"> 
-                <h3 class="categories-title">
-                    <span class="categories-title-white">30% OFF</span><br>
-                    <span class="categories-title-pink">FOR WOMEN</span>
-                </h3>
-                <video class="video" src="video/video_women.mp4" width="360" height="260" controls loop poster="img/for-women.png"></video>
-                </div>
-                <div class="categories-item categories-item-men"> 
-                    <h3 class="categories-title">
-                    <span class="categories-title-white">HOT DEAL</span> <br>
-                    <span class="categories-title-pink">FOR MEN</span>
-                    </h3>
-                    <video class="video" src="video/video_men.mp4" width="360" height="260" controls loop poster="img/for-men.png"></video>
-                </div>
-                <div class="categories-item categories-item-kids"> 
-                    <h3 class="categories-title">
-                    <span class="categories-title-white">NEW ARRIVALS</span> <br>
-                    <span class="categories-title-pink">FOR KIDS</span>
-                    </h3>
-                    <video class="video" src="video/video_kids.mp4" width="360" height="260" controls loop poster="img/for-kids.png"></video>
-                </div>
-                <div class="categories-item categories-item-acc">
-                    <h3 class="categories-title">
-                        <span class="categories-title-white">LUXIROUS & TRENDY</span> <br>
-                    <span class="categories-title-pink"> ACCESORIES</span>
-                    </h3>
-                    <video class="video" src="video/video_acc.mp4" width="1140" height="180" controls loop poster="img/acc.png"></video>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="products">
+
+    <section class="products products-page">
         <div class="container">
             <div class="products-wrap">
-                <h3 class="products-title">Featured Items</h3>
-                <p class="products-text">Shop for items based on what we featured in this week</p>
                 <ul class="products-list">
                     <li class="products-card">
-                        <img class="products-pic" src="img/product_1.png" alt="product_pic">
-                        <div class="products-card-overlay">
-                            <button class="overlay-button">
-                                <svg class="overlay-button-icon" width="26" height="24" viewBox="0 0 35 33" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25.9509 23.2667H25.8386C25.2294 23.2667 24.7177 22.7671 24.6735 22.1294C24.629 21.4607 25.1175 20.8785 25.7626 20.8346C25.788 20.8329 25.8145 20.832 25.8405 20.832C26.4575 20.832 26.9743 21.3219 27.0201 21.9487C27.0319 22.1971 26.9914 22.5514 26.736 22.8439L26.73 22.8507L26.7242 22.8575C26.5275 23.0912 26.2607 23.2321 25.9509 23.2667ZM12.2189 23.2604C11.5683 23.2604 11.0391 22.7174 11.0391 22.05C11.0391 21.3832 11.5683 20.8406 12.2189 20.8406C12.8694 20.8406 13.3987 21.3832 13.3987 22.05C13.3987 22.7174 12.8694 23.2604 12.2189 23.2604Z" />
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    <g filter="url(#filter0_d)">
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d" x="0.560547" y="0.292969" width="33.9874" height="31.9733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="4"/>
-                                    <feGaussianBlur stdDeviation="2"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                    </svg>
-                                    
-                                Add to Cart        
-                            </button>
-                        </div>
-                        <h4 class="products-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="products-card-decription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products-card-price">$52.00</p>
-                    </li>
-                    <li class="products-card">
-                        <img class="products-pic" src="img/product_2.png" alt="product_pic">
+                        <img class="products-pic" src="img/product_4.png" alt="product_pic">
                         <div class="products-card-overlay">
                             <button class="overlay-button">
                                 <svg class="overlay-button-icon" width="26" height="24" viewBox="0 0 35 33" xmlns="http://www.w3.org/2000/svg">
@@ -207,68 +284,6 @@
                         <p class="products-card-price">$52.00</p>
                     </li>
                     <li class="products-card">
-                        <img class="products-pic" src="img/product_4.png" alt="product_pic">
-                        <div class="products-card-overlay">
-                            <button class="overlay-button">
-                                <svg class="overlay-button-icon" width="26" height="24" viewBox="0 0 35 33" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25.9509 23.2667H25.8386C25.2294 23.2667 24.7177 22.7671 24.6735 22.1294C24.629 21.4607 25.1175 20.8785 25.7626 20.8346C25.788 20.8329 25.8145 20.832 25.8405 20.832C26.4575 20.832 26.9743 21.3219 27.0201 21.9487C27.0319 22.1971 26.9914 22.5514 26.736 22.8439L26.73 22.8507L26.7242 22.8575C26.5275 23.0912 26.2607 23.2321 25.9509 23.2667ZM12.2189 23.2604C11.5683 23.2604 11.0391 22.7174 11.0391 22.05C11.0391 21.3832 11.5683 20.8406 12.2189 20.8406C12.8694 20.8406 13.3987 21.3832 13.3987 22.05C13.3987 22.7174 12.8694 23.2604 12.2189 23.2604Z" />
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    <g filter="url(#filter0_d)">
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d" x="0.560547" y="0.292969" width="33.9874" height="31.9733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="4"/>
-                                    <feGaussianBlur stdDeviation="2"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                    </svg>
-                                    
-                                Add to Cart        
-                            </button>
-                        </div>
-                        <h4 class="products-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="products-card-decription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products-card-price">$52.00</p>
-                    </li>
-                    <li class="products-card">
-                        <img class="products-pic" src="img/product_5.png" alt="product_pic">
-                        <div class="products-card-overlay">
-                            <button class="overlay-button">
-                                <svg class="overlay-button-icon" width="26" height="24" viewBox="0 0 35 33" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25.9509 23.2667H25.8386C25.2294 23.2667 24.7177 22.7671 24.6735 22.1294C24.629 21.4607 25.1175 20.8785 25.7626 20.8346C25.788 20.8329 25.8145 20.832 25.8405 20.832C26.4575 20.832 26.9743 21.3219 27.0201 21.9487C27.0319 22.1971 26.9914 22.5514 26.736 22.8439L26.73 22.8507L26.7242 22.8575C26.5275 23.0912 26.2607 23.2321 25.9509 23.2667ZM12.2189 23.2604C11.5683 23.2604 11.0391 22.7174 11.0391 22.05C11.0391 21.3832 11.5683 20.8406 12.2189 20.8406C12.8694 20.8406 13.3987 21.3832 13.3987 22.05C13.3987 22.7174 12.8694 23.2604 12.2189 23.2604Z" />
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    <g filter="url(#filter0_d)">
-                                    <path d="M25.876 22.2662C25.921 22.2549 25.9423 22.2339 25.96 22.2129C25.9678 22.2037 25.9756 22.1946 25.9835 22.1855C26.02 22.1438 26.0233 22.0553 26.0224 22.0105C26.0092 21.9044 25.9185 21.8315 25.8412 21.8315C25.8375 21.8315 25.8336 21.8317 25.8312 21.8318C25.7531 21.8372 25.6653 21.9409 25.6719 22.0625C25.6813 22.1793 25.7675 22.2662 25.8392 22.2662H25.876ZM12.2195 22.2599C12.3187 22.2599 12.3994 22.1655 12.3994 22.0496C12.3994 21.9341 12.3187 21.8401 12.2195 21.8401C12.1204 21.8401 12.0397 21.9341 12.0397 22.0496C12.0397 22.1655 12.1204 22.2599 12.2195 22.2599ZM25.9995 24.2662C25.9517 24.2662 25.8878 24.2662 25.8392 24.2662C24.7017 24.2662 23.7567 23.3545 23.6765 22.198C23.5964 20.9929 24.4937 19.9183 25.6953 19.8364C25.7441 19.8331 25.7928 19.8315 25.8412 19.8315C26.9799 19.8315 27.9413 20.7324 28.019 21.8884C28.0505 22.4915 27.8741 23.0612 27.4898 23.5012C27.1055 23.9575 26.5764 24.2177 25.9995 24.2662ZM12.2195 24.2599C11.0153 24.2599 10.0397 23.2709 10.0397 22.0496C10.0397 20.8291 11.0153 19.8401 12.2195 19.8401C13.4237 19.8401 14.3994 20.8291 14.3994 22.0496C14.3994 23.2709 13.4237 24.2599 12.2195 24.2599ZM25.1984 17.3938H13.1331C12.7001 17.3938 12.3159 17.1005 12.2033 16.6775L8.27753 2.24768H5.52173C4.99341 2.24768 4.56055 1.80859 4.56055 1.27039C4.56055 0.733032 4.99341 0.292969 5.52173 0.292969H8.99933C9.43134 0.292969 9.81561 0.586304 9.9281 1.01025L13.8539 15.4391H24.5576L28.1144 7.13379H16.2578C15.7286 7.13379 15.2957 6.69373 15.2957 6.15649C15.2957 5.61914 15.7286 5.17908 16.2578 5.17908H29.5886C29.9091 5.17908 30.2141 5.34192 30.3896 5.61914C30.566 5.89539 30.5984 6.23743 30.4697 6.547L26.0795 16.807C25.9193 17.1653 25.5827 17.3938 25.1984 17.3938Z"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d" x="0.560547" y="0.292969" width="33.9874" height="31.9733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="4"/>
-                                    <feGaussianBlur stdDeviation="2"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                    </svg>
-                                    
-                                Add to Cart        
-                            </button>
-                        </div>
-                        <h4 class="products-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="products-card-decription">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="products-card-price">$52.00</p>
-                    </li>
-                    <li class="products-card">
                         <img class="products-pic" src="img/product_6.png" alt="product_pic">
                         <div class="products-card-overlay">
                             <button class="overlay-button">
@@ -300,12 +315,10 @@
                         <p class="products-card-price">$52.00</p>
                     </li>
                 </ul>
-                <div class="products-link">
-                    <a href="сatalog.html" class="products-btn">Browse All Product</a>
-                </div>
             </div>
         </div>
     </section>
+
     <section class="advantages">
         <div class="container">
             <div class="advantages-wrap">
