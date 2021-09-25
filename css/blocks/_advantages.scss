@@ -68,3 +68,9 @@
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+.advantages-mobile {
+    @media (max-width: 576px) {
+        display: none;
+    }
+}

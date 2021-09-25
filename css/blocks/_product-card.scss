@@ -8,6 +8,11 @@
         margin-top: - $shift;
         background-color: $white;
         position: relative;
+
+        @media (max-width: 576px) {
+            margin-top: 0;
+            margin-bottom: 64px;
+        }
     }
 
     &-wrap {
@@ -54,6 +59,10 @@
         color: #5E5E5E;
         text-align: center;
         margin-bottom: 32px;
+
+        @media (max-width: 576px) {
+            width: 360px;
+        }
     }
     
     &-price {
@@ -70,9 +79,21 @@
             background-color: #EAEAEA;
             display: block;
             margin: 64px auto;
+
+            @media (max-width: 576px) {
+                width: 175px;
+            }
         }
     }    
     }
+
+    // .products-card-mobile {
+    //     @media (max-width: 576px) {
+    //         &:nth-child(2) {
+    //             display: none;
+    //         }
+    //     }
+    // }
 
     .choosing {
         &-wrap {
@@ -128,5 +149,5 @@
     }
 
     .products-page {
-        margin-bottom: 128px;
+        margin-bottom: 64px;
     }

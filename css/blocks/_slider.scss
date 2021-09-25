@@ -8,6 +8,16 @@
     align-items: center;
     position: relative;
     padding-bottom: $shift;
+
+    @media (max-width: 576px) {
+        padding-bottom: 85px;
+    }
+
+    &-img {
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
 }
 
 .slider-btn {
