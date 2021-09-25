@@ -1,0 +1,41 @@
+.footer {
+    background-color: #222224;
+}
+
+.footer-wrap {
+    @include dfjcsb();
+    align-items: center;
+    color: #FBFBFB;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.social {
+    display: flex;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 7px;
+    text-decoration: none;
+    color: $dark;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    @include dfjcc();
+    align-items: center;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $pink;
+        color: $white;
+        transform: rotate(360deg);
+    }
+}
