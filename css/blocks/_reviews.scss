@@ -59,23 +59,23 @@
 }
 
 .subscribe-field {
-    padding: 10px 64px 10px 22px;
+    padding: 15px 64px 15px 22px;
     border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     background-color: #E1E1E1;
 }
 
 .subscribe-btn {
-    padding: 10px;
+    padding: 15px;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: $white;
     border: none;
     background-color: $pink;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     transition: 0.3s;
 
     &:hover {
