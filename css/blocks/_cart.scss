@@ -1,0 +1,209 @@
+.shopping {
+    background-color: #F8F3F4;
+
+    &-wrap {
+        padding: 60px 0;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+    }
+}
+
+.container-cart {
+    @include dfjcsb();
+    padding-top: 96px;  
+    padding-bottom: 128px;
+}
+
+.cart-product-wrap {
+    margin-right: 128px;
+}
+
+.cart-product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 652px;
+    height: 306px;
+    padding-right: 185px;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:hover {
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.50));
+        }
+
+    &-img {
+        margin-right: 31px;
+    }
+
+    &-btn {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark;
+        margin-bottom: 42px;
+        margin-top: 22px;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        margin-bottom: 6px;
+
+        &-pink {
+            color: $pink;
+        }
+    }
+
+    &-input {
+        width: 44px;
+        margin-left: 24px;
+        padding-left: 16px;
+    }
+}
+
+.cart-product-buttons-wrap {
+    @include dfjcsb();
+}
+
+.cart-product-buttons {
+    padding: 17px 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #A4A4A4;
+    margin-top: 32px;
+
+    &:hover {
+        box-shadow: (4px 4px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.cart-delivery {
+    padding-top: 17px;
+
+    &-form {
+        margin-bottom: 57px;
+
+        &-title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $dark;
+            margin-bottom: 20px;
+        }
+
+        &-input {
+            width: 360px;
+            margin-bottom: 20px;
+            padding: 14px 17px;
+        }
+
+        &-button {
+            border: 1px solid #A4A4A4;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+            padding: 11px 15px;
+            background-color: transparent;
+
+            &:hover {
+                box-shadow: (4px 4px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    &-amount {
+        background-color: #F5F3F3;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 39px 34px 42px 44px;
+
+        &-title {
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+            margin-bottom: 12px;
+
+        &__sub {
+            margin-right: 20px;
+        }
+
+        &__total {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $dark;
+            &-price {
+                margin-left: 20px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: $pink;
+            }
+        }
+        }
+
+        &-btn {
+            background-color: $pink;
+            color: $white;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 15px 42px;
+            border: none;
+
+            &:hover {
+                border: 1px solid $pink;
+                background-color: $white;
+                color: $pink;
+            }
+        }
+    }
+}
+
+.grand-title {
+
+    &::after {
+        content: "";
+        width: 275px;
+        height: 1px;
+        background-color: #E2E2E2;
+        display: block;
+        margin: 21px auto 17px;
+    }
+}

@@ -1,0 +1,39 @@
+.intro {
+    background-color: #F7E4E2;
+}
+
+.intro-wrap {
+    height: 764px;
+    background-image: url(../img/intro-bgi.png);
+    background-repeat: no-repeat;
+    background-position: -228px bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.intro-title {
+    width: 401px;
+    padding-left: 16px;
+    margin-right: 101px;
+    border-left: 12px solid $pink;
+    color: $dark;
+}
+
+.intro-title-big {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.intro-title-small {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.intro-title-pink {
+    color: $pink;
+}

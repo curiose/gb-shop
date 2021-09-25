@@ -1,0 +1,120 @@
+.filter-wrap {
+    display: flex;
+}
+
+.filter {
+    width: 360px;
+    position: relative;
+    z-index: 20;
+
+    &-title {
+        display: block;
+        padding-left: 16px;
+    }
+
+    &-icon {
+        margin-left: 11px;
+    }
+}
+
+.filter[open] .filter-title {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+
+.filter-menu-wrap {
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    max-height: 531px;
+    width: 360px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    top: -21px;
+}
+
+.filter-menu {
+    padding-left: 16px;
+    background-color: #fff;
+    margin-top: 46px;
+    padding-bottom: 16px;
+}
+
+.filter-category {
+
+    &-drop {
+        padding-top: 16px;
+        padding-right: 15px;
+    }
+
+    &-title {
+        display: block;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 11px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &-wrap {
+        padding-top: 24px;
+    }
+
+    &-list {
+        list-style-type: none;
+        margin-bottom: 11px;
+    }
+
+    &-link {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    &-wrap {
+        display: flex;
+        padding-bottom: 64px;
+    }
+}
+
+.size {
+    &-title {
+        display: block;
+        // padding-bottom: 64px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-right: 28px;
+        position: relative;
+    }
+
+    &-checkbox {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    }
+}
+
+.size-form-wrap {
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 79px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    margin-top: 5px;
+    padding: 7px 30px 11px 9px;
+}
+
+.fa-chevron-down {
+    margin-left: 10px;
+}

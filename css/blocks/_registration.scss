@@ -1,0 +1,115 @@
+.reg {
+    background-color: #F8F3F4;
+
+    &-wrap {
+        padding: 60px 0;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+    }
+}
+
+.registration-container {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    @include dfjcsb();
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+
+    &-btn {
+        width: 167px;
+        background-color: $pink;
+        color: $white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 16px 20px;
+        border: 1px solid $pink;
+
+        &:hover {
+            background-color: $white;
+            color: $pink;
+            border: 1px solid $pink;
+        }
+    }
+}
+
+.fa-arrow-right {
+    margin-left: 20px;
+}
+
+.registration-name {
+    margin-bottom: 33px;
+    
+    &__radio {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+.registration-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark;
+    margin-bottom: 20px;
+}
+
+.registration-input {
+    width: 360px;
+    padding: 14px 17px;
+    margin-bottom: 20px;
+}
+
+.registration-login {
+
+    &-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        width: 359px;
+        margin-bottom: 39px;
+    }
+}
+
+.registration-loyalty {
+
+    &-title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+    }
+
+    &-text {
+        width: 652px;
+        padding-bottom: 21px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+        &__perk {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.fa-check {
+    margin-right: 23px;
+}
