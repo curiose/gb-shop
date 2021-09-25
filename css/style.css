@@ -829,10 +829,23 @@
   padding-bottom: 60px;
   margin-bottom: 51px;
 }
+@media (max-width: 576px) {
+  .arrivals {
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+}
 
 .arrivals-wrap {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .arrivals-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .arrivals-title {
@@ -840,6 +853,11 @@
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+}
+@media (max-width: 576px) {
+  .arrivals-title {
+    margin-bottom: 32px;
+  }
 }
 
 .breadcrumbs {
@@ -875,11 +893,21 @@
 .filter-wrap {
   display: flex;
 }
+@media (max-width: 768px) {
+  .filter-wrap {
+    justify-content: space-between;
+  }
+}
 
 .filter {
   width: 360px;
   position: relative;
   z-index: 20;
+}
+@media (max-width: 576px) {
+  .filter {
+    width: 202px;
+  }
 }
 .filter-title {
   display: block;
@@ -887,6 +915,18 @@
 }
 .filter-icon {
   margin-left: 11px;
+}
+@media (max-width: 576px) {
+  .filter-icon {
+    width: 38px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-title-span {
+    display: none;
+  }
 }
 
 .filter[open] .filter-title {
@@ -945,6 +985,11 @@
   align-items: center;
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  .sorting {
+    margin-left: 0;
+  }
+}
 .sorting-wrap {
   display: flex;
   padding-bottom: 64px;
@@ -979,11 +1024,23 @@
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .products-card:nth-child(3) {
+    display: none;
+  }
+}
+
 .products-pages-navigation {
   display: flex;
   justify-content: center;
   margin-top: 48px;
   margin-bottom: 96px;
+}
+@media (max-width: 768px) {
+  .products-pages-navigation {
+    margin-top: 40px;
+    margin-bottom: 63px;
+  }
 }
 
 .products-pages {
