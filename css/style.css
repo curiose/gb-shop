@@ -7,14 +7,42 @@
   font-family: "Lato", sans-serif;
 }
 
-.header {
-  background-color: #222222;
-  position: relative;
-}
-
 .container {
   width: 1140px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: content-box;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1140px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+.header {
+  background-color: #222222;
+  position: relative;
 }
 
 .header-wrap {
@@ -51,6 +79,17 @@
 
 .link-user {
   margin-right: 33px;
+}
+@media (max-width: 576px) {
+  .link-user {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .link-cart {
+    display: none;
+  }
 }
 
 .nav-menu {
@@ -110,6 +149,11 @@
 .nav-menu-open {
   display: block;
 }
+@media (max-width: 992px) {
+  .nav-menu-open {
+    display: none;
+  }
+}
 
 .nav-menu-close {
   display: none;
@@ -129,6 +173,24 @@
   align-items: center;
   margin-bottom: 65px;
 }
+@media (max-width: 992px) {
+  .intro-wrap {
+    height: 386px;
+    background-image: url(../img/bgi-intro-tablet.png);
+    background-position: 0 bottom;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .intro-wrap {
+    background-image: none;
+    height: 363px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+}
 
 .intro-title {
   width: 401px;
@@ -137,11 +199,29 @@
   border-left: 12px solid #F16D7F;
   color: #222222;
 }
+@media (max-width: 992px) {
+  .intro-title {
+    width: 401px;
+    margin-right: 0;
+  }
+}
 
 .intro-title-big {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
+}
+@media (max-width: 768px) {
+  .intro-title-big {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+@media (max-width: 576px) {
+  .intro-title-big {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 
 .intro-title-small {
@@ -150,9 +230,27 @@
   font-size: 32px;
   line-height: 38px;
 }
+@media (max-width: 768px) {
+  .intro-title-small {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 576px) {
+  .intro-title-small {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 
 .intro-title-pink {
   color: #F16D7F;
+}
+@media (max-width: 768px) {
+  .intro-title-pink {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .categories-wrap {
@@ -162,9 +260,24 @@
   gap: 30px;
   margin-bottom: 96px;
 }
+@media (max-width: 768px) {
+  .categories-wrap {
+    gap: 15px;
+    margin-bottom: 154px;
+  }
+}
+@media (max-width: 576px) {
+  .categories-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+}
 
 .categories-item {
-  width: 360px;
+  width: 30%;
   height: 260px;
   background-color: #C4C4C4;
   background-repeat: no-repeat;
@@ -173,6 +286,24 @@
   align-items: center;
   text-align: center;
   position: relative;
+}
+@media (max-width: 1140px) {
+  .categories-item {
+    width: 29.6%;
+    height: 195px;
+  }
+}
+@media (max-width: 768px) {
+  .categories-item {
+    height: 167px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .categories-item {
+    width: 100%;
+    height: 247px;
+  }
 }
 
 .categories-item-women {
@@ -191,6 +322,12 @@
   width: 100%;
   height: 180px;
   background-image: url(../img/acc.png);
+}
+@media (max-width: 768px) {
+  .categories-item-acc {
+    width: 100%;
+    height: 116px;
+  }
 }
 
 .categories-title {
@@ -214,6 +351,12 @@
   position: absolute;
   object-fit: cover;
 }
+@media (max-width: 1140px) {
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+}
 .video:hover {
   z-index: 10;
 }
@@ -236,6 +379,11 @@
   text-align: center;
   margin-bottom: 48px;
 }
+@media (max-width: 576px) {
+  .products-text {
+    margin-bottom: 65px;
+  }
+}
 
 .products-list {
   display: flex;
@@ -243,14 +391,44 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .products-list {
+    gap: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .products-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .products-card {
-  max-width: 360px;
+  width: 31.5%;
   list-style-type: none;
   background-color: #F8F8F8;
   padding-bottom: 20px;
-  padding-right: 29px;
   position: relative;
+}
+@media (max-width: 1140px) {
+  .products-card {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .products-card {
+    width: 48%;
+  }
+}
+@media (max-width: 576px) {
+  .products-card {
+    width: 360px;
+  }
+}
+
+.product-pic-wrap {
+  margin-bottom: 25px;
 }
 
 .products-card-overlay {
@@ -268,6 +446,21 @@
   transition: 0.5s;
   transform: scale(0);
   transform-origin: left bottom;
+}
+@media (max-width: 1140px) {
+  .products-card-overlay {
+    height: 252px;
+  }
+}
+@media (max-width: 768px) {
+  .products-card-overlay {
+    height: 403px;
+  }
+}
+@media (max-width: 576px) {
+  .products-card-overlay {
+    height: 420px;
+  }
 }
 
 .products-card:hover .products-card-overlay {
@@ -297,8 +490,15 @@
   fill: #222222;
 }
 
-.products-pic {
-  margin-bottom: 25px;
+@media (max-width: 1140px) {
+  .products-pic {
+    width: 100%;
+  }
+}
+
+.product-text-wrap {
+  padding-right: 29px;
+  padding-bottom: 20px;
 }
 
 .products-card-link {
@@ -337,6 +537,18 @@
   margin-top: 48px;
   margin-bottom: 109px;
 }
+@media (max-width: 768px) {
+  .products-link {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 576px) {
+  .products-link {
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+}
 
 .products-btn {
   text-align: center;
@@ -365,12 +577,31 @@
   padding-top: 104px;
   padding-bottom: 104px;
 }
+@media (max-width: 768px) {
+  .advantages-wrap {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.advantages-card {
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .advantages-card {
+    margin-right: 0;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
 
 .advantages-card-delivery {
   background-image: url(../img/adv-del.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-right: 30px;
 }
 
 .advantages-title {
@@ -392,12 +623,16 @@
   text-align: center;
   color: #FBFBFB;
 }
+@media (max-width: 768px) {
+  .advantages-text {
+    width: 360px;
+  }
+}
 
 .advantages-card-sales {
   background-image: url(../img/adv-sale.png);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-right: 30px;
 }
 
 .advantages-card-quality {
@@ -412,10 +647,30 @@
   background-size: cover;
   height: 448px;
 }
+@media (max-width: 768px) {
+  .reviews {
+    height: 688px;
+    background-position-x: -392px;
+  }
+}
+@media (max-width: 576px) {
+  .reviews {
+    height: 609px;
+    background-position-x: -522px;
+  }
+}
 
 .reviews-wrap {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .reviews-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+  }
 }
 
 .reviews-user {
@@ -425,6 +680,17 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .reviews-user {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .reviews-user {
+    width: 343px;
+    margin-bottom: 59px;
+  }
 }
 
 .reviews-user__logo {
@@ -443,6 +709,11 @@
 .reviews-subscribe {
   margin-right: 97px;
 }
+@media (max-width: 768px) {
+  .reviews-subscribe {
+    margin-right: 0;
+  }
+}
 
 .reviews-subscribe__title {
   margin-top: 150px;
@@ -450,6 +721,11 @@
   text-align: center;
   color: #222224;
   line-height: 167.2%;
+}
+@media (max-width: 768px) {
+  .reviews-subscribe__title {
+    margin-top: 48px;
+  }
 }
 
 .reviews-sibscribe__title-big {
@@ -505,6 +781,12 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
+@media (max-width: 576px) {
+  .footer-wrap {
+    flex-direction: column-reverse;
+    padding-top: 43px;
+  }
+}
 
 .footer-text {
   font-style: normal;
@@ -515,6 +797,11 @@
 
 .social {
   display: flex;
+}
+@media (max-width: 576px) {
+  .social {
+    margin-bottom: 40px;
+  }
 }
 
 .social-link {
