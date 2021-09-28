@@ -6,7 +6,8 @@
 }
 
 .container {
-    width: 1140px;
+    // width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -30,5 +31,8 @@
 
     @media (max-width: 576px) {
         max-width: 540px;
+    }
+    @media (max-width: 390px) {
+        padding: 5px;
     }
 }
