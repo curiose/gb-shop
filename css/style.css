@@ -207,7 +207,7 @@
 @media (max-width: 992px) {
   .intro-title {
     width: 401px;
-    margin-right: 0;
+    margin-right: 33px;
   }
 }
 @media (max-width: 768px) {
