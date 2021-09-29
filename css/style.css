@@ -1740,6 +1740,11 @@
 .reg {
   background-color: #F8F3F4;
 }
+@media (max-width: 750px) {
+  .reg {
+    text-align: center;
+  }
+}
 .reg-wrap {
   padding: 60px 0;
 }
@@ -1756,6 +1761,12 @@
   padding-bottom: 96px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 725px) {
+  .registration-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .registration-form {
@@ -1805,7 +1816,17 @@
   padding: 14px 17px;
   margin-bottom: 20px;
 }
+@media (max-width: 725px) {
+  .registration-input {
+    width: 100%;
+  }
+}
 
+@media (max-width: 725px) {
+  .registration-login {
+    margin-bottom: 40px;
+  }
+}
 .registration-login-text {
   font-style: normal;
   font-weight: 300;
@@ -1825,7 +1846,7 @@
   margin-bottom: 22px;
 }
 .registration-loyalty-text {
-  width: 652px;
+  max-width: 652px;
   padding-bottom: 21px;
   font-style: normal;
   font-weight: 300;
