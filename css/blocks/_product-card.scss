@@ -8,6 +8,15 @@
         margin-top: - $shift;
         background-color: $white;
         position: relative;
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: 0;
+            margin-bottom: 64px;
+        }
     }
 
     &-wrap {
@@ -44,6 +53,10 @@
         line-height: 22px;
         color: #4D4D4D;
         margin-bottom: 48px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 32px;
+        }
     }
     
     &-text {
@@ -54,6 +67,10 @@
         color: #5E5E5E;
         text-align: center;
         margin-bottom: 32px;
+
+        @media (max-width: 576px) {
+            width: 360px;
+        }
     }
     
     &-price {
@@ -70,6 +87,19 @@
             background-color: #EAEAEA;
             display: block;
             margin: 64px auto;
+
+            @media (max-width: 768px) {
+                width: 594px;
+            }
+
+            @media (max-width: 640px) {
+                width: 484px;
+            }
+
+            @media (max-width: 576px) {
+                width: 175px;
+                margin: 32px auto 49px;
+            }
         }
     }    
     }
@@ -78,6 +108,10 @@
         &-wrap {
             @include dfjcc();
             margin-bottom: 48px;
+
+            @media (max-width: 576px) {
+                margin-bottom: 64px;
+            }
         }
 
         &-drop {
@@ -87,6 +121,11 @@
             font-size: 14px;
             line-height: 17px;
             color: #6F6E6E;
+
+            @media (max-width: 576px) {
+                font-size: 10px;
+                line-height: 12px;   
+            }
         }
     }
 
@@ -128,5 +167,28 @@
     }
 
     .products-page {
-        margin-bottom: 128px;
+        margin-bottom: 64px;
+    }
+
+    .product-card-slider:nth-child(3) {
+
+        @media (max-width: 768px) {
+            display: none;
+        } 
+        @media (max-width: 576px) {
+            display: block;
+        }     
+    }
+
+    .product-card-slider:nth-child(2) {
+
+        @media (max-width: 576px) {
+            display: none;
+        }    
+    }
+
+    .products-list-slider {
+        @media (max-width: 768px) {
+            flex-direction: row-reverse;
+        }
     }

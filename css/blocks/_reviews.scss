@@ -3,10 +3,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 448px;
+
+    @media (max-width: 768px) {
+        height: 688px;
+        background-position-x: -392px;
+    }
+
+    @media (max-width: 576px) {
+        height: 609px;
+        background-position-x: -522px;
+    }
 }
 
 .reviews-wrap {
     @include dfjcsb();
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-top: 64px;
+    }
 }
 
 .reviews-user {
@@ -15,6 +32,15 @@
     @include dfjcc();
     flex-wrap: wrap;
     align-items: center;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }    
+
+    @media (max-width: 576px) {
+        width: 343px;
+        margin-bottom: 59px;
+    }
 }
 
 .reviews-user__logo {
@@ -32,6 +58,10 @@
 
 .reviews-subscribe {
     margin-right: 97px;
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
 }
 
 .reviews-subscribe__title {
@@ -40,6 +70,10 @@
     text-align: center;
     color: #222224;
     line-height: 167.2%;
+
+    @media (max-width: 768px) {
+        margin-top: 48px;
+    }
 }
 
 .reviews-sibscribe__title-big {

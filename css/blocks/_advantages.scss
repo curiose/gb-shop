@@ -6,13 +6,31 @@
     @include dfjcsb();
     padding-top: 104px;
     padding-bottom: 104px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.advantages-card {
+    margin-right: 30px;
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 48px;
+        text-align: center;
+    }
 }
 
 .advantages-card-delivery {
     background-image: url(../img/adv-del.svg);
     background-repeat: no-repeat;
     background-position: center top;
-    margin-right: 30px;
+    
 }
 
 .advantages-title {
@@ -33,17 +51,26 @@
     line-height: 17px;
     text-align: center;
     color: #FBFBFB;
+
+    @media (max-width: 768px) {
+        width: 360px;
+    }
 }
 
 .advantages-card-sales {
     background-image: url(../img/adv-sale.png);
     background-repeat: no-repeat;
     background-position: center top;
-    margin-right: 30px;
 }
 
 .advantages-card-quality {
     background-image: url(../img/adv-quality.png);
     background-repeat: no-repeat;
     background-position: center top;
+}
+
+.advantages-mobile {
+    @media (max-width: 768px) {
+        display: none;
+    }
 }

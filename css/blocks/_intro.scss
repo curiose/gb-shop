@@ -11,6 +11,22 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 65px;
+
+    @media (max-width: 992px) {
+        height: 386px;
+        background-image: url(../img/bgi-intro-tablet.png);
+        background-position: 0 bottom;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    @media (max-width: 700px) {
+        background-image: none;
+        height: 363px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+    }
 }
 
 .intro-title {
@@ -19,12 +35,42 @@
     margin-right: 101px;
     border-left: 12px solid $pink;
     color: $dark;
+
+    @media (max-width: 992px) {
+        width: 401px;
+        margin-right: 33px;
+    }
+
+    @media (max-width: 768px) {
+        width: 308px;
+        margin-right: 33px;
+    }
+
+    @media (max-width: 700px) {
+        width: 308px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 576px) {
+        width: 263px;
+        margin: 0 auto;
+    }
 }
 
 .intro-title-big {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+
+    @media (max-width: 768px) {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 38px;
+        line-height: 46px;
+    }
 }
 
 .intro-title-small {
@@ -32,8 +78,28 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 .intro-title-pink {
     color: $pink;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
